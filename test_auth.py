@@ -1,5 +1,5 @@
-# "** Авторизация **
-# 1. Авторизация используя корректные данные (standard_user, secret_sauce)
+# "** Authorization**
+# 1. Authorization using correct data (standard_user, secret_sauce)
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
@@ -21,7 +21,7 @@ def test_auth_valid():
     assert driver.current_url == 'https://www.saucedemo.com/inventory.html'
 
     driver.quit()
-# 2. Авторизация используя некорректные данные (user, user)
+# 2. Authorization using incorrect data (user, user)
 def test_auth_invalid():
     driver.get("https://www.saucedemo.com/")
 
